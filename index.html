@@ -2,113 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>xkotvi01</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <title>Syrza</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="header-logo">
-      <h1>Nikita Kotvitskiy</h1>
+    <div id="avatar">
+      <img src="sources/ava.jpg">
     </div>
-    <div class="header-navigation">
-      <button id="mobile-nav-toggle" aria-label="Toggle Navigation" onclick="navButton()"><img src="sources/menu-icon.png"></button>
-      <nav class="navigation">
+    <div id="title">
+      <h1>Syrza</h1>
+    </div>
+    <div id="navigation">
+      <nav>
         <ul>
-          <li></li>
-          <li><a href="#section-1">About</a></li>
-          <li><a href="#section-2">Study</a></li>
-          <li><a href="#section-3">Sport</a></li>
-          <li><a href="#section-4">Skills</a></li>
-          <li></li>
+          <li>About</li>
+          <li>Favourit</li>
+          <li>My own</li>
+          <li>Contacts</li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div id="section-1" class="section">
-      <div class="about">
-        <div class="text">
-          <h2>About myself</h2>
-          <p>My name is Nikita Kotvitskiy, and I am <span id="live-timer"></span> years old. I was born in Kazan city, Russia, but since 2020 I have been living in Brno city, Czech Republic.</p>
-          <p>Currently, my main focus is on my studies: I am a student at BUT FIT. My goal is to complete my studies, find work, and become a professional in the field of IT.</p>
-        </div>
-        <img src="sources/me.jpg">
-      </div>
+    <div class="content" id="cur-content">
+      Content
     </div>
-
-    <div id="section-2" class="section">
-      <div class="study">
-        <div class="text">
-          <h2>Study</h2>
-          <p>2016–2020: ORT school №12, Kazan, Russia</p>
-          <p>2020–2021: GoStudy school in Brno</p>
-          <p>2021–present: VUT FIT in Brno</p>
-        </div>
-        <div id="study-logos">
-          <img id="school" src="sources/school.jpg">
-          <img id="gostudy" src="sources/GoStudy.png">
-          <img id="fit" src="sources/fit.png">
-        </div>
-      </div>
+    <div class="content" id="new-content">
+      New content
     </div>
-
-    <div id="section-3" class="section">
-      <div class="sport">
-        <div class="text">
-          <h2>Sport</h2>
-          <p>Unfortunately, in the last few years, I haven't had enough time and money to pursue any serious sports. However, in the past, I enjoyed horse riding and diving. I hold an official PADI certificate that I obtained while studying at a diving school in Egypt with my father. I hope to have the opportunity to continue pursuing both sports in the future, but for now, I am limited to working out at the gym.</p>
-        </div>
-        <img src="sources/horse.png">
-      </div>
-    </div>
-
-    <div id="section-4" class="section">
-      <div class="skills">
-        <div class="text">
-          <h2>Skills and knowledge</h2>
-          <ul>
-            <li>Knowledge of C++ and Python languages</li>
-            <li>Knowledge of Oracle SQL and DB creation process</li>
-            <li>Experience with Blender and Unity3D</li>
-            <li>Knowledge of software development</li>
-            <li>Knowledge of computer graphics</li>
-            <li>Knowledge of formal languages</li>
-            <li>Knowledge of object-oriented languages</li>
-            <li>Good problem solving skills</li>
-            <li>Good analytical skills</li>
-            <li>Teamwork experience Education</li>
-            <li>English – Conversational</li>
-            <li>Czech – Confirmed B2</li>
-            <li>Russian – Native</li>
-          </ul>
-        </div>
-        <div id="skills-icons">
-          <div>
-            <img src="sources/c.png">
-          </div>
-          <div>
-            <img src="sources/cpp.png">
-            <img src="sources/csharp.png">
-          </div>
-          <div>
-            <img src="sources/python.png">
-          </div>
-          <div>
-            <img src="sources/oracle.png">
-            <img src="sources/blender.png">
-          </div>
-          <div>
-            <img src="sources/unity.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
   </main>
 </body>
 <script src="nav_script.js"></script>
