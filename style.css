@@ -12,7 +12,7 @@
     padding: 0;
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -54,7 +54,6 @@ header {
 #title:hover {
     text-shadow: 5px 5px 1px purple;
 }
-
 
 #navigation {
     margin: 20px 50px 20px 20px;
@@ -105,7 +104,25 @@ header {
 
 @media screen and (max-width: 760px) {
     #navigation {
-        display: none;
+        position: absolute;
+        background-color: black;
+        top: 180px;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        height: 0;
+        transition: height 0.5s ease;
+    }
+    #navigation.active {
+        height: 200px;
+        overflow: unset;
+    }
+    #navigation nav {
+        margin: 50px;
+    }
+    #navigation a {
+        font-size: 30px;
     }
     #nav-button {
         margin: 20px 50px 20px 20px;
@@ -113,6 +130,9 @@ header {
         justify-content: center;
         align-items: center;
         flex: 1;
+    }
+    #nav-button.active button {
+        border-color: purple;
     }
     #nav-button button {
         width: 100px;
@@ -145,14 +165,18 @@ header {
     }
     #nav-button button:hover {
         border-color: purple;
-        transform: scale(1.1);
     }
     #nav-button button:hover * {
         border-color: purple;
     }
+
+    #navigation.showed
 }
 
 @media screen and (max-width: 650px) {
+    #navigation {
+        top: 140px;
+    }
     #avatar {
         display: none;
     }
@@ -162,6 +186,16 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+    #navigation {
+        top: 270px;
+    }
+    #navigation.active {
+        height: 320px;
+    }
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
     header {
         flex-direction: column;
     }
